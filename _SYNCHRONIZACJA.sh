@@ -2,9 +2,9 @@ clear;echo;echo;echo AKTUALIZACJA ZDALNEGO REPOZYTORIUM;sleep 1;clear
 #########################################################################################################
 
 
-git add -A
+git add --all
 git commit -a -m 'update'
-git push
+git push -u origin master
 
 
 #########################################################################################################
