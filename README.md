@@ -1,2 +1,0 @@
-# tv
-ico epg
