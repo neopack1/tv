@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+
+<html><head>
+
+<title>TELEJAZDA</title>
+
+<link rel="Shortcut icon" href="http://m3u.king-tv.pl/img/favicon.png" />
+
+<style>
+
+body {
+
+	display: inline-block;
+
+	text-align: center;
+
+	width:100%;
+
+	margin-left:auto;
+
+	margin-right:auto;
+
+}
+
+h2 {
+
+	font-size: 14px;
+
+	font-family: Tahoma;
+
+	font-style: normal!important;
+
+}
+
+h1 {
+
+	font-size: 16px;
+
+	font-family: Tahoma;
+
+	font-style: normal!important;
+
+}
+
+input {
+
+	border-radius: 8px;
+
+	padding: 3px;
+
+	border: none;
+
+    border-bottom: 2px solid #f93e3e;
+
+    background-color: #f7f7f7;
+
+    color: #820000;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 14px;
+
+	font-weight: bold;
+
+    -webkit-transition-duration: 0.3s; /* Safari */
+
+    transition-duration: 0.2s;
+
+}
+
+
+
+.button {
+
+    background-color: #4CAF50; /* Green */
+
+    border: none;
+
+    color: white;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 14px;
+
+	font-weight: bold;
+
+    -webkit-transition-duration: 0.3s; /* Safari */
+
+    transition-duration: 0.2s;
+
+    cursor: pointer;
+
+}
+
+
+
+.button1 {
+
+	border-radius: 8px;
+
+    background-color: white; 
+
+    color: black; 
+
+	padding: 4px 84px; 
+
+    border: 2px solid #4CAF50;
+
+}
+
+
+
+.button1:hover {
+
+    background-color: #4CAF50;
+
+    color: white;
+
+}
+
+
+
+.button2 {
+
+	border-radius: 4px;
+
+    background-color: white; 
+
+    color: black; 
+
+	padding: 8px 32px; 
+
+    border: 2px solid #008CBA;
+
+}
+
+
+
+.button2:hover {
+
+    background-color: #008CBA;
+
+    color: white;
+
+}
+
+
+
+.button3 {
+
+	border-radius: 8px;
+
+    background-color: white; 
+
+    color: black; 
+
+	padding: 4px 24px; 
+
+    border: 2px solid #f44336;
+
+}
+
+
+
+.button3:hover {
+
+    background-color: #f44336;
+
+    color: white;
+
+}
+
+
+
+.button4 {
+
+    background-color: white; 
+
+    color: black; 
+
+	padding: 8px 32px; 
+
+    border: 2px solid #e7e7e7; 
+
+}
+
+
+
+.button4:hover {background-color: #e7e7e7;}
+
+
+
+.button5 {
+
+    background-color: white;
+
+    color: black;
+
+	padding: 8px 32px;
+
+    border: 2px solid #555555;
+
+}
+
+
+
+.button5:hover {
+
+    background-color: #555555;
+
+    color: white;
+
+}
+
+</style></head> 
+<?php
+$dir = ".";
+
+// Otwarcie prawidłowego katalogu i pobranie jego zawartości
+if (is_dir($dir)) {
+    if ($dh = opendir($dir)) {
+        while (($file = readdir($dh)) !== false) {
+            if ($file != 'index.php' && $file != '.' && $file != '..') {
+                echo '<a href="'.$file.'">'.$file.'</a><br/>
+';
+            }
+        }
+        closedir($dh);
+    }
+}
+?>
+
+
+
+	<body>
+	</body>
+
+</html>
