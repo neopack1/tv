@@ -6,7 +6,7 @@ pushd "%~dp0"
 :PROGRAM
 cls
 ECHO.
-echo ECHO [41;93m LISTOWANIE IKON KANAŁÓW [0m
+echo [41;93m LISTOWANIE IKON KANAŁÓW [0m
 ECHO.
 set KATALOG=logo
 set PLIK=_lista_.lst
@@ -19,8 +19,13 @@ FOR /F "tokens=*" %%G IN ('dir /A:-D /b "%KATALOG%\*.*"') DO (
 
 
 
-echo ECHO [41;93m SYNCHRONIZACJA Z GITHUB [0m
+echo [41;93m SYNCHRONIZACJA Z GITHUB [0m
+echo.
 
+git add --all
+git commit -a -m 'update'
+git push -u origin master
 
-_sync.sh
-timeout /t 3 >nul
+echo.
+echo [41;93m ZAKOŃCZONO [0m
+pause>nul

@@ -9,5 +9,5 @@ git push -u origin master
 
 #########################################################################################################
 sleep 1;echo;echo;echo ZAKOŃCZONO PRZETWARZANIE SKRYPTU;
-sleep 10;clear;echo;echo ZAMYKAM TERMINAL;
+sleep 3;clear;echo;echo ZAMYKAM TERMINAL;
 sleep 1; exit
