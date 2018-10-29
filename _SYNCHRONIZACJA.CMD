@@ -38,7 +38,7 @@ set LISTA=%KATALOG%\%PLIK%
 if exist %LISTA% del /f /q %LISTA%
 set "DT=%MojaData% %MojCzas%"
 echo %DT%>%LISTA%
-FOR /F "tokens=*" %%G IN ('dir /A:-D /b "%KATALOG%\*.*"') DO (
+FOR /F "tokens=*" %%G IN ('dir /A:-D /b "%KATALOG%\*.png"') DO (
 	echo %%G>>%LISTA%
 	set /a count+=1
 )
