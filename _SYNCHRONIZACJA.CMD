@@ -27,5 +27,5 @@ git commit -a -m 'update'
 git push -u origin master
 
 echo.
-echo [41;93m ZAKOŃCZONO [0m
+echo [30;102m ZAKOŃCZONO [0m
 pause>nul
