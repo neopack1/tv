@@ -26,7 +26,7 @@ FOR /F "tokens=1* delims=:" %%a IN ('time /t') DO set MojCzas=%%a:%%b:%_S%
 
 
 set KATALOG=logo
-set PLIK=_lista_.lst
+set PLIK=.lista.lst
 
 
 
@@ -60,5 +60,5 @@ echo.
 echo [30;102m                   ZAKOŃCZONO SYNCHRONIZACJĘ                   [0m
 echo. & echo.
 echo             [7m NACINIJ KLAWISZ ABY ZAMKNĄC OKNO [0m
-timeout /T 5 >nul
+timeout /T 10 >nul
 exit /b
